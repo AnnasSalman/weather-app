@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="header">
+        <h3>WEATHER FORECAST (5 DAYS)</h3>
+    </div>
+    <div class="content">
+        <div class="search-box">
+            <select name="search-by" id="search-by">
+                <option disabled selected value> Search by </option>
+                <option value="city-name">City Name</option>
+                <option value="city-id">City id</option>
+                <option value="zip-code">Zip Code</option>
+            </select>
+            <input 
+                type="text" 
+                id="search-term-input" 
+                name="search-term-input" 
+                placeholder="Search term"
+            />
+            <button id="search-button">
+                <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" id="search-icon"/>
+            </button>
+        </div>
+        <p id="info-text"></p>
+        <div class="weather-body">
+            
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
