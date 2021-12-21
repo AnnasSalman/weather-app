@@ -2,37 +2,149 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Input-container{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Text-input{
+  width: 40%;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::placeholder{
+  font-size: 16px;
+}
+
+.Search-button{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4vw;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff; 
+  background-color: #3b3b61;
+  height: 60px;
+}
+
+.Body{
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Weather-top{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 54vw;
+}
+
+.Weather-mid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 52vw;
+}
+
+.Weather-bottom{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Weather-icon{
+  object-fit: contain;
+}
+
+.Weather-forecast-item{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: .6vw;
+  margin-right: .6vw;
+  padding-left: 1.4vw;
+  padding-right: 1.4vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Row{
+  display: flex;
+  flex-direction: row;
+}
+
+.Col{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-size: 68px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #8493aa;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #8493aa;
+  font-weight: 500;
+}
+
+h4{
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #8493aa;
+  font-weight: 500;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.selected{
+  border: 1px solid #333;
+  background-color: #f3ecec;
+  border-radius: 3px;
+}
+
+.Loading-indicator{
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.underline{
+  text-decoration: underline;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+h3 > span{
+  cursor: pointer;
 }
