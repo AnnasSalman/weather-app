@@ -68,7 +68,7 @@ const Weather: React.FC<IProps> = ({city, list, unit, onClick}) => {
             </div>
             <div className="Weather-mid">
                 <div className="Row">
-                    <img src={`http://openweathermap.org/img/wn/${list[selectedWeatherDay].weather[0].icon}@2x.png`} className="Weather-icon" alt="sunny"/>
+                    <img src={`http://openweathermap.org/img/wn/${getDailyWeatherFromHourlyWeather(list)[selectedWeatherDay].weather[0].icon}@2x.png`} className="Weather-icon" alt="sunny"/>
                     <h1>{Math.round(list[selectedWeatherDay].main.temp)}</h1>
                     <h3>
                         °<span 
