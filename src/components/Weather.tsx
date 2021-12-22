@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import WeatherForecastItem from './WeatherForecastItem';
-import { AreaChart, Tooltip, Area, Line, XAxis} from 'recharts';
+import { AreaChart, Tooltip, Area, XAxis} from 'recharts';
 
 import { IWeatherForecast } from '../types';
 

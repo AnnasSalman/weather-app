@@ -25,11 +25,6 @@ const options = [
     },
 ];
 
-const onSelect = () => {
-
-
-}
-
 const Input: React.FC<Props> = ({
     onDropdownSelect,
     textInputValue,
