@@ -46,6 +46,7 @@ function App() {
     })
   }
 
+  // if all inputs exist, fetch weather else show error
   const onSearchClick = (): void => {
     if(form.searchType && form.searchText){
       getWeather(form.searchText, form.searchType, form.unit);
@@ -56,6 +57,7 @@ function App() {
     }
   }
 
+  // Change all temperature values according to the changed unit.
   const onUnitChange = (unit: string): void => {
     if(unit === 'c' || unit === 'f'){
       setForm({...form, unit})

@@ -9,6 +9,8 @@ type dayGraphData = {
     temperature: number,
 }[]
 
+/* Filter the complete (3 hour inteval) timeline to get daily timeline (1 day interval).
+ Return only the temperature and the weekday for each element*/
 const getGraphDataFromDailyForecast = (
     list: IWeatherForecast["list"],
     dailyWeather: IWeatherForecast["list"],
